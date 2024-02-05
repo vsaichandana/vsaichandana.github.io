@@ -16,4 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Simple form validation example
-    const contactForm = document
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission for demonstration
+        alert('Form submitted!'); // Replace with actual form submission logic
+    });
+});
